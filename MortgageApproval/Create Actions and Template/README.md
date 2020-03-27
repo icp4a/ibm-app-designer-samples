@@ -10,7 +10,8 @@ ___
 
 ![alt text](./images/PrefAdvanced.png "Advanced Mode")
 
-2. Import "CreditDeptTK - v5.twx".  This twx file has the Customer business object and an associated view. It also contains a common header used by the fictitious credit department.
+2. In the Toolkits panel, import "CreditDeptTK - v5.twx".  This twx file has the Customer business object and an associated view. It also contains a common header used by the fictitious credit department. 
+
 3. Create the MortgageUtils toolkit.
 
 ![alt text](./images/CreateToolkit.png "Create toolkit")
