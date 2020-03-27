@@ -7,8 +7,8 @@ ___
 1. Open BAStudio and ensure the view mode in the user preferences is set to advanced.
 2. If you have not authored the MortgageApproval app, import MortgageApproval - v1.twx.
 3. Go into the details for MortgageApproval and choose the snapshots panel.
-4. At the end of the V1 snapshot row, click Export.
-5. In the dialog, choose Installation Package then complete the dialog.
+4. At the end of the V1 snapshot row, click on the options (3 vertical dots) button and then Export.
+5. In the dialog, choose .zip then complete the dialog.
 
 ![alt text](./images/ExportApp.png "Export App")
 

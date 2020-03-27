@@ -6,17 +6,17 @@ In this part of the sample, the provider (a technical user) creates business-lev
 
 ![alt text](./images/PrefMenu.png "Preferences Menu")
 
-2. Import "DL_UI_Toolkit - V1.twx".  This twx file has some business objects and corresponding views for building Apps in the DL Flooring company.
-3. Create the DL Flooring Actions toolkit.
+2. Go to the Toolkits panel and import "DL_UI_Toolkit - V1.twx".  This twx file has some business objects and corresponding views for building Apps in the DL Flooring company.
+3. Create the DL Flooring Actions toolkit. 
 
 ![alt text](./images/CreateToolkit.png "Create toolkit")
 
-4. Create an action called Get Quote.
+4. Create an action called Get Quote. Action options can be found in the left library panel.
 5. On the variables tab, create the input variables flooringType (String) and squareFootage (Decimal).  Create an output variable called jobQuote of type Decimal.
 
 ![alt text](./images/GetQuoteVars.png "Get Quote Variables")
 
-6. In the diagram, create a script activity and set the script to:
+6. In the diagram, create a script activity. Rename the script to Calculate Quote and set the script to:
 ```javascript
 if(tw.local.flooringType=="Hardwood"){
 	tw.local.jobQuote = tw.local.squareFootage * 6;
@@ -39,7 +39,7 @@ if(tw.local.flooringType=="Hardwood"){
 ![alt text](./images/CreateTemplate.png "Create Template")
 
 10. After the editor is opened, add DL Flooring Actions and DL UI Toolkit as toolkit dependencies.
-11. In the App artifact, add DL Flooring Header to the first page. Click Finish editing.
+11. In the App artifact, add DL Flooring Header to the first page. It can be found in the DL UI Toolkit or on the right side palette. Click Finish editing.
 
 ![alt text](./images/Template.png "DL App Template")
 
