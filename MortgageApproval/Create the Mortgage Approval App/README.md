@@ -10,7 +10,7 @@ ___
 
 ![alt text](./images/PrefBasic.png "Basic Mode")
 
-2. If you haven't performed the Create Actions and Template steps, then import the "MortgageAppTemplate - V1.twx" file.
+2. If you haven't performed the Create Actions and Template steps, then import the "MortgageAppTemplate - V4.twx" file.
 3. Go to the template panel and create an App from the MortgageAppTemplate. Name the App MortgageApproval.
 
 ![alt text](./images/CreateApp.png "Create the App")
@@ -52,7 +52,7 @@ ___
 
 ![alt text](./images/CustomerIDDataMap.png "Customer ID Data Map")
 
-18. Add a button under Customer ID and have it call the GetCustomerID action, mapping to the customer and customerID variables. After the action is called, we want to stay on the current page.
+18. Add a button under Customer ID and have it call the GetCustomerID action, mapping to the customer first name, last name, and customerID variables. You can leave all the other output parameters unmapped. After the action is called, we want to stay on the current page.
 
 ![alt text](./images/LookupIDNextSteps.png "Customer ID Lookup Next Steps")
 

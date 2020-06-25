@@ -10,13 +10,13 @@ ___
 
 ![alt text](./images/PrefAdvanced.png "Advanced Mode")
 
-2. In the Toolkits panel, import "CreditDeptTK - v5.twx".  This twx file has the Customer business object and an associated view. It also contains a common header used by the fictitious credit department. 
+2. In the Toolkits panel, import "CreditDeptTK - v7.twx".  This twx file has the Customer business object and an associated view. It also contains a common header used by the fictitious credit department. 
 
 3. Create the MortgageUtils toolkit.
 
 ![alt text](./images/CreateToolkit.png "Create toolkit")
 
-4. After the editor opens, add the Workflow Services toolkit as a dependency.
+4. After the editor opens, add the Workflow Services toolkit as a dependency. Use the latest version if multiple versions exist.  
 
 ![alt text](./images/AddTKDep.png "Add toolkit as dependency")
 
@@ -39,17 +39,41 @@ ___
 
 10. Create a Server Script and set the script to: "tw.local.approved = tw.local.mortgageAmount<tw.local.yearlyIncome;"
 11. Wire the Start node to the script activity, and the script activity to the End node. Press the finish editing button.
-12. Create a snapshot of the toolkit called V1 when finished.
+12. Create an action called GetCustomerID
+13. In the diagram, create a nested action activity and set the implementation to call the Call Service action, which is in the Workflow Services Toolkit.
+
+![alt text](./images/CallServiceImpl.png "Call Service")
+
+14. Press the configure button that appears under Call Service in the implementation tab of the properties.  Select MortgagePA as the process application and Get Customer ID as the service flow.  Press finish.  Note the data mappings, the variables, and the App Resource reference (in the Toolkit Settings) that are created for you.
+
+![alt text](./images/CallServiceAC.png "Call Service Configurator")
+
+15. To make the Action simpler to consume, add another output variable called customerID.  
+
+![alt text](./images/customerIDVar.png "Customer ID Variable")
+
+16. Add a script node and set the script to:
+```javascript
+if(tw.local.responseData){
+	tw.local.customerID = tw.local.responseData.customerID;
+}else{
+	tw.local.customerID = "Not Found";
+}
+```
+
+![alt text](./images/extraOutputScript.png "Extra Output Script")
+
+17. Create a snapshot of the toolkit called V1 when finished.
 
 ![alt text](./images/MortgageUtilsSnapshot.png "Mortgage Utils snapshot")
 
-13. Return to Studio and create a template called MortgageAppTemplate.
+18. Return to Studio and create a template called MortgageAppTemplate.
 
 ![alt text](./images/CreateTemplate.png "Create Template")
 
-14. After the editor is opened, add MortgageUtils and CreditDeptTK as toolkit dependencies.
-15. In the App, add CreditDeptTempl to the first page. Press the finish editing button.
+19. After the editor is opened, add MortgageUtils and CreditDeptTK as toolkit dependencies.
+20. In the App, add CreditDeptTempl to the first page. Press the finish editing button.
 
 ![alt text](./images/Template.png "Mortgage App Template")
 
-16. Create a snapshot of the template called V1.
+21. Create a snapshot of the template called V1.

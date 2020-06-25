@@ -8,7 +8,7 @@ Setup
 ___
 To run this sample, you must have a Business Automation Workflow Center server running and connected to App Designer. If the workflow environment is properly configured then you should see a Workflow Services toolkit when opening BAStudio as an advanced user.
 
-Prerequisite step: To run any of the scenarios, start by importing "MortgagePA - v4.twx" to the Workflow Center. This twx file contains a workflow process that will be leveraged by the Mortgage Approval app.
+Prerequisite step: To run any of the scenarios, start by importing "MortgagePA - v7.twx" to the Workflow Center. This twx file contains a workflow process that will be leveraged by the Mortgage Approval app.
 
 This sample has three main phases.  You may skip any phase and go directly to the scenario that you are interested in.
 1. Import base artifacts then author the template artifacts as the provider.  These artifacts can be consumed by the app assembler. [See the Create Actions and Template folder.](./Create%20Actions%20and%20Template)
