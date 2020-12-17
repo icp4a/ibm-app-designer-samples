@@ -13,6 +13,6 @@ This repository contains samples for DBA App Designer.  Each folder contains a d
 
 There are also two additional folders with resources needed during the configuration of the App Designer environment.
 1. The contributionFiles folder contains files needed for the configuration of BAW with App Designer.  For more details, see 
-[Configuring IBM Business Automation Studio with IBM Business Automation Workflow](https://www.ibm.com/support/knowledgecenter/en/SSYHZ8_19.0.x/com.ibm.dba.install/op_topics/tsk_basconfig_baw.html).
+[Configuring IBM Business Automation Studio with IBM Business Automation Workflow](https://www.ibm.com/support/knowledgecenter/en/SSYHZ8_20.0.x/com.ibm.dba.install/op_topics/tsk_basconfig_baw.html).
 2. The navigatorPlugin contains a jar file that is needed when configuring Automation Navigator with the App Engine.  For more details, see
 [Publishing apps](https://www.ibm.com/support/knowledgecenter/SSYHZ8_19.0.x/com.ibm.dba.appdesign/topics/tsk_bas_publishapps.html).
