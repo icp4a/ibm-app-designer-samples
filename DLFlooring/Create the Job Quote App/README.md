@@ -22,8 +22,8 @@ In this part of the sample, the assembler (a business developer) creates an App 
 ![alt text](./images/LocationDataMap.png "Data association for location view")
 
 6. Add an instance of the Flooring Type view under the location and create a new variable called flooringType for the data association.
-7. Add a decimal control under the flooring type, set the label to "Square Footage" and create a new variable called squareFootage for the data association.
-8. Add a decimal control under Square Footage, set the label to Job Quote and create a new variable called jobQuote for the data association.
+7. Add a Decimal control by dragging and dropping from the right-side palette and place it under the Flooring Type. Set the label to "Square Footage" and create a new variable called squareFootage for the data association.
+8. Add a Decimal control by dragging and dropping from the right-side palette and place it under the Square Footage. Set the label to Job Quote and create a new variable called jobQuote for the data association.
 
 ![alt text](./images/FormFieldsComplete.png "Form Fields Complete")
 
@@ -41,7 +41,7 @@ In this part of the sample, the assembler (a business developer) creates an App 
 ![alt text](./images/GetQuoteButton.png "Get Quote Button")
 
 13. Now that the App is fully authored, press the Preview button in the top right corner to try it out. 
-14. Once you are happy with how the app is running, return to studio. Using the menu on the card, choose Request publish. Enter v1 for the snapshot name and complete the dialog so the administrator can publish the app into production.
+14. Once you are happy with how the app is running, return to studio. Using the menu on the card, choose Request publish. Enter v1 for the version (snapshot) name and complete the dialog so the administrator can publish the app into production.
 
 ![alt text](./images/RequestPublish.png "Request Publish")
 

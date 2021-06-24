@@ -16,7 +16,7 @@ In this part of the sample, the provider (a technical user) creates business-lev
 
 ![alt text](./images/GetQuoteVars.png "Get Quote Variables")
 
-6. In the diagram, create a script activity. Rename the script to Calculate Quote and set the script to:
+6. In the Diagram tab, create a script activity. Rename the script to Calculate Quote and set the script to:
 ```javascript
 if(tw.local.flooringType=="Hardwood"){
 	tw.local.jobQuote = tw.local.squareFootage * 6;
@@ -30,17 +30,26 @@ if(tw.local.flooringType=="Hardwood"){
 
 ![alt text](./images/GetQuoteDiagram.png "Get Quote diagram")
 
-8. Create a snapshot of the toolkit called V1.
+8. Create a version (snapshot) of the toolkit called V1.
 
-![alt text](./images/DLFlooringActionsSnapshot.png "DL Flooring Actions snapshot")
+![alt text](./images/DLFlooringActionsVersion.png "DL Flooring Actions version")
 
 9. Return to Studio and create a template called DL Flooring Template.
 
 ![alt text](./images/CreateTemplate.png "Create Template")
 
-10. After the editor is opened, add DL Flooring Actions and DL UI Toolkit as toolkit dependencies.
-11. In the App artifact, add DL Flooring Header to the first page. It can be found in the DL UI Toolkit or on the right side palette. Click Finish editing.
+10. After the editor is opened, delete the Default Navigation Bar. On the Page Dialog, open the Default Navigation Bar.
+
+![alt text](./images/PageDefaultNavigationBar.png "Page Default Navigation Bar")
+
+11. Delete this page. Go back to the Starting Page, and delete the referenced common area as this is now removed.
+
+![alt text](./images/DeleteReferencedArea.png "Delete ReferencedArea")
+
+12. Add DL Flooring Actions and DL UI Toolkit as toolkit dependencies. This can be done by clicking on the briefcase logo on the left library panel, and adding a Toolkit.
+
+13. In the App artifact, add DL Flooring Header to the first page. It can be found in the DL UI Toolkit or on the right side palette. Click Finish editing.
 
 ![alt text](./images/Template.png "DL App Template")
 
-12. Create a snapshot of the template called V1.
+14. Create a snapshot of the template called V1.

@@ -14,9 +14,18 @@ In this part of the sample, the provider (a technical user) creates a business-l
 
 ![alt text](./images/CreateTemplate.png "Create Template")
 
-4. After the editor is opened, add CreditDeptTK as a toolkit dependencies.
-5. In the App, add CreditDeptTempl to the first page by dragging the view from the palette into the layout. Press the finish editing button.
+4. After the editor is opened, delete the Default Navigation Bar. On the Page Dialog, open the Default Navigation Bar.
+
+![alt text](./images/PageDefaultNavigationBar.png "Page Default Navigation Bar")
+
+5. Delete this page. Go back to the Starting Page, and delete the referenced common area as this is now removed.
+
+![alt text](./images/DeleteReferencedArea.png "Delete ReferencedArea")
+
+6. Add CreditDeptTK as a toolkit dependencies. This can be done by clicking on the briefcase logo on the left library panel, and adding a Toolkit.
+
+7. In the App, add CreditDeptTempl to the first page by dragging the view from the palette into the layout. Press the finish editing button.
 
 ![alt text](./images/Template.png "Mortgage App Template")
 
-6. Create a snapshot of the template.
+8. Create a snapshot of the template.
