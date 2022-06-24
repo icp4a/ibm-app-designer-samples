@@ -1,6 +1,6 @@
 # Tutorial: Create a reusable no-code solution with business orchestration (technology preview)
 
-Business Orchestration is introduced as a technology preview in IBM Cloud Pak for Business Automation 21.0.3.
+Business Orchestration is introduced as a technology preview in IBM Cloud Pak for Business Automation 22.0.1.
 
 Business applications in IBM Business Automation Studio are evolving to enable you to create no-code solutions, called business orchestrations. A business orchestration is a flow of business activities that can call automation services or can engage users. Learn how to create a no-code business orchestration that reuses business services and make it reusable. 
 
@@ -11,7 +11,7 @@ With just a few clicks, you can create orchestrations, call business automation 
  - [Objectives](#objectives)
  - [Before you begin](#before-you-begin)
  - [Scenario](#scenario)
- - [Import the required artifacts](#import-required-artifacts)
+ - [Import the required artifacts](#import-the-required-artifacts)
  - [Create a business orchestration](#create-a-business-orchestration)
  - [Create the UI to launch your orchestration](#create-the-UI-to-launch-your-orchestration)
  - [Preview your orchestration](#preview-your-orchestration)
@@ -32,7 +32,7 @@ Ask your administrator to install these starter patterns:
 - The Business Automation Application starter pattern, including the optional Business Orchestration component.
 - The Business Automation Workflow Authoring and Automation Workstream Services starter pattern. Only the Business Automation Studio component is required.
 
-For information on how to install these patterns, see [Installing starter deployments](https://www.ibm.com/docs/SSYHZ8_21.0.3/com.ibm.dba.install/op_topics/tsk_install_demo.html).
+For information on how to install these patterns, see [Installing a CP4BA multi-pattern starter deployment](https://www.ibm.com/docs/SSYHZ8_22.0.1/com.ibm.dba.install/op_topics/tsk_installing_cp4ba_starter.html).
 
 ## Scenario
 A business analyst automates the approval or rejection of a loan application.
@@ -210,9 +210,9 @@ If you want your orchestration to be discovered and reused by other applications
 
 ## More information
 
-You can use document Data types so that users can upload documents as part of the orchestration. To enable document support, install the FileNet Content Manager starter pattern. For information on how to install this pattern, see [Installing starter deployments](https://www.ibm.com/docs/SSYHZ8_21.0.3/com.ibm.dba.install/op_topics/tsk_install_demo.html).
+You can use document Data types so that users can upload documents as part of the orchestration. To enable document support, install the FileNet Content Manager starter pattern. For information on how to install this pattern, see [Installing a CP4BA FileNet Content Manager starter deployment](https://www.ibm.com/docs/SSYHZ8_22.0.1/com.ibm.dba.install/op_topics/tsk_installing_content_starter.html).
 
 Although the technology preview for business orchestrations is not accessible, there are some helpful [Business orchestration keyboard shortcuts](keyboardshortcuts.md).
 
 For information about known issues, see the **Technology preview: Business orchestrations** section of 
-[IBM Cloud Pak for Business Automation 21.0.x Known Issues](https://supportcontent.ibm.com/support/pages/node/6426995#M4).
+[IBM Cloud Pak for Business Automation 22.0.x Known Issues](https://www.ibm.com/support/pages/node/6563243).
